@@ -1,4 +1,6 @@
-import { Text, Button, useToast } from '@chakra-ui/react'
+import { Text, Button, useToast, Box } from '@chakra-ui/react'
+import Image from 'next/image'
+
 import { Head } from 'components/layout/Head'
 import { HeadingComponent } from 'components/layout/HeadingComponent'
 import { LinkComponent } from 'components/layout/LinkComponent'
@@ -86,8 +88,41 @@ export default function Home() {
       <Head />
 
       <main>
-        <HeadingComponent as="h2">Hi there! 👋</HeadingComponent>
-        <Button
+        {' '}
+        <Box borderRadius="lg" overflow="hidden">
+          <video autoPlay controls>
+            <source src="/nft-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Box>
+        <br />
+        <HeadingComponent as="h2">Unlock the Future with Arthera Genesis User Power Lifetime Subscription</HeadingComponent>
+        <Text>Welcome to the Arthera Club: Where Blockchain Transforms</Text>
+        <Text>
+          Embark on a journey through the boundless world of blockchain with the Arthera Genesis Power User Lifetime Subscription. This isn't just a
+          subscription, it's your golden ticket to unlocking the full potential of blockchain.{' '}
+        </Text>
+        <Text>Welcome to Arthera, where every interaction is enriched with value and innovation.</Text>
+        <Text>
+          Why Choose the Arthera Genesis Power User Lifetime Subscription? Dive into a vibrant community of blockchain enthusiasts, surrounded by
+          brilliance, passion, and innovation. Experience easy access to Arthera's ecosystem, free from the burden of gas fees, and enjoy entry to
+          curated dApps that elevate your blockchain journey. Premium Benefits Tailored for You: No More Gas Fees: Say goodbye to gas fee worries.
+          Engage with the blockchain freely, with up to 30 daily transactions at no additional cost. Curated dApps Access: Enjoy exclusive access to
+          premium dApps, offering cutting-edge opportunities. Community Engagement: Connect, share, learn, and grow within a welcoming community of
+          fellow explorers. Explore: Unleashing unprecedented value over a lifetime Subscription Store Benefits: Access discounts on various
+          subscriptions, adding value to your blockchain journey. Early Access to Lifetime Deals: Stay ahead with whitelisted early access to
+          exclusive opportunities. Helpdesk Support: Enjoy constant support, ensuring your journey is always smooth and exceptional. Don't Miss This
+          Unparalleled Opportunity! The Arthera Genesis Power User Lifetime Subscription is more than an offer, it's your gateway to a transformative
+          blockchain experience. Join the Arthera Club and awaken a new blockchain reality. Key Details: Limited edition Special pre-launch price of
+          $33 (usual price $99) Available on 20+ blockchains Affiliate/Referral Program: 10% referral bonus for up to 33 licenses 15% referral bonus
+          for 34-66 licenses 20% referral bonus for 67+ licenses EOA Subscriptions: Say goodbye to gas fee worries with Arthera Genesis User Power
+          Subscription. Enjoy 30 daily transactions across multiple token types for an incredible value. Currently, the starting point provides you
+          enough gas fees on a monthly basis for whole life to: Make 30 AA transfers Perform 30 ERC20 token transfers Execute 30 ERC721 token
+          transfers Conduct 30 ERC1155 token transfers Join Arthera and embrace a future of seamless, secure, and cost-effective blockchain
+          interactions.
+        </Text>
+        {/* <HeadingComponent as="h2">Hi there! 👋</HeadingComponent> */}
+        {/* <Button
           mt={4}
           colorScheme="blue"
           variant="outline"
@@ -97,7 +132,7 @@ export default function Home() {
           loadingText="Minting..."
           spinnerPlacement="end">
           Mint
-        </Button>
+        </Button> */}
         {txHash && (
           <Text py={4} fontSize="14px" color="#45a2f8">
             <LinkComponent href={txLink ? txLink : ''}>{txHash}</LinkComponent>
