@@ -1,8 +1,9 @@
 import { ThemingProps } from '@chakra-ui/react'
 import { Chain } from '@wagmi/core'
 
-export const SITE_NAME = 'Tuesday Heartbreak'
-export const SITE_DESCRIPTION = 'I want to be with you when the night time comes'
+export const SITE_NAME = 'Arthera Genesis User Power Lifetime Subscription'
+export const SITE_DESCRIPTION =
+  'Arthera Genesis Power User Lifetime Subscription: Your golden ticket to unlocking the full potential of blockchain and Web3. Advantages include: No More Gas Fees, Curated dApps Access, Subscription Store Benefits, Early Access to Lifetime Deals, Helpdesk Support, and more to come!'
 export const SITE_URL = 'tuesday-heartbreak.netlify.app'
 
 export const THEME_INITIAL_COLOR = 'system'
