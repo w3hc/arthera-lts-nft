@@ -24,9 +24,9 @@ export default function Home() {
 
   useEffect(() => {
     const init = async () => {
-      if (chain?.id !== 10243) {
-        switchNetwork?.(10243)
-      }
+      // if (chain?.id !== 10243) {
+      //   switchNetwork?.(10243)
+      // }
     }
     init()
     console.log('isConnected:', isConnected)
@@ -94,45 +94,71 @@ export default function Home() {
             <source src="/nft-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <br />
         </Box>
-        <br />
         <HeadingComponent as="h2">Unlock the Future with Arthera Genesis User Power Lifetime Subscription</HeadingComponent>
-        <Text>Welcome to the Arthera Club: Where Blockchain Transforms</Text>
-        <Text>
-          Embark on a journey through the boundless world of blockchain with the Arthera Genesis Power User Lifetime Subscription. This isn't just a
-          subscription, it's your golden ticket to unlocking the full potential of blockchain.{' '}
+        <Text mt={5} fontSize={24}>
+          Welcome to the Arthera Club: Where Blockchain Transforms
         </Text>
-        <Text>Welcome to Arthera, where every interaction is enriched with value and innovation.</Text>
-        <Text>
-          Why Choose the Arthera Genesis Power User Lifetime Subscription? Dive into a vibrant community of blockchain enthusiasts, surrounded by
-          brilliance, passion, and innovation. Experience easy access to Arthera's ecosystem, free from the burden of gas fees, and enjoy entry to
-          curated dApps that elevate your blockchain journey. Premium Benefits Tailored for You: No More Gas Fees: Say goodbye to gas fee worries.
-          Engage with the blockchain freely, with up to 30 daily transactions at no additional cost. Curated dApps Access: Enjoy exclusive access to
-          premium dApps, offering cutting-edge opportunities. Community Engagement: Connect, share, learn, and grow within a welcoming community of
-          fellow explorers. Explore: Unleashing unprecedented value over a lifetime Subscription Store Benefits: Access discounts on various
-          subscriptions, adding value to your blockchain journey. Early Access to Lifetime Deals: Stay ahead with whitelisted early access to
-          exclusive opportunities. Helpdesk Support: Enjoy constant support, ensuring your journey is always smooth and exceptional. Don't Miss This
-          Unparalleled Opportunity! The Arthera Genesis Power User Lifetime Subscription is more than an offer, it's your gateway to a transformative
-          blockchain experience. Join the Arthera Club and awaken a new blockchain reality. Key Details: Limited edition Special pre-launch price of
-          $33 (usual price $99) Available on 20+ blockchains Affiliate/Referral Program: 10% referral bonus for up to 33 licenses 15% referral bonus
-          for 34-66 licenses 20% referral bonus for 67+ licenses EOA Subscriptions: Say goodbye to gas fee worries with Arthera Genesis User Power
-          Subscription. Enjoy 30 daily transactions across multiple token types for an incredible value. Currently, the starting point provides you
-          enough gas fees on a monthly basis for whole life to: Make 30 AA transfers Perform 30 ERC20 token transfers Execute 30 ERC721 token
-          transfers Conduct 30 ERC1155 token transfers Join Arthera and embrace a future of seamless, secure, and cost-effective blockchain
-          interactions.
+        <Text mt={5}>
+          Embark on a journey through the boundless world of blockchain with the Arthera Genesis Power User Lifetime Subscription. This isn&apos;t
+          just a subscription, it&apos;s your golden ticket to unlocking the full potential of blockchain.
         </Text>
-        {/* <HeadingComponent as="h2">Hi there! 👋</HeadingComponent> */}
-        {/* <Button
+        <Text mt={5}>Welcome to Arthera, where every interaction is enriched with value and innovation.</Text>
+        <Text mt={5}>
+          <strong>Why Choose the Arthera Genesis Power User Lifetime Subscription?</strong>
+        </Text>
+        <Text mt={5}>
+          Dive into a vibrant community of blockchain enthusiasts, surrounded by brilliance, passion, and innovation. Experience easy access to
+          Arthera&apos;s ecosystem, free from the burden of gas fees, and enjoy entry to curated dApps that elevate your blockchain journey.
+        </Text>
+        <Text mt={5}>Premium Benefits Tailored for You:</Text>
+        <Text mt={5}>
+          <ul>
+            <li>No More Gas Fees: Say goodbye to gas fee worries.</li>
+            <li>Engage with the blockchain freely, with up to 30 daily transactions at no additional cost.</li>
+            <li>Curated dApps Access: Enjoy exclusive access to premium dApps, offering cutting-edge opportunities. </li>
+            <li>Community Engagement: Connect, share, learn, and grow within a welcoming community of fellow explorers. </li>
+            <li>Explore: Unleashing unprecedented value over a lifetime Subscription Store</li>
+            <li>Benefits: Access discounts on various subscriptions, adding value to your blockchain journey. </li>
+            <li>Early Access to Lifetime Deals: Stay ahead with whitelisted early access to exclusive opportunities. </li>
+            <li>Helpdesk Support: Enjoy constant support, ensuring your journey is always smooth and exceptional. </li>
+          </ul>
+        </Text>
+        <Text mt={5}>Don&apos;t Miss This Unparalleled Opportunity!</Text>
+        <Text mt={5}>
+          The Arthera Genesis Power User Lifetime Subscription is more than an offer, it&apos;s your gateway to a transformative blockchain
+          experience.{' '}
+        </Text>
+        <Text mt={5}>Join the Arthera Club and awaken a new blockchain reality. </Text>
+        <strong>Key Details</strong>:
+        <ul>
+          <li>Limited edition Special pre-launch price of $33 (usual price $99) </li>
+          <li>Available on 20+ blockchains Affiliate/Referral </li>
+          <li>Program: 10% referral bonus for up to 33 licenses 15% referral bonus for 34-66 licenses </li>
+          <li>20% referral bonus for 67+ licenses </li>
+        </ul>
+        <Text mt={5}>
+          <strong>EOA Subscriptions:</strong>{' '}
+        </Text>
+        <Text mt={5}>Say goodbye to gas fee worries with Arthera Genesis User Power Subscription. </Text>
+        <Text mt={5}>Enjoy 30 daily transactions across multiple token types for an incredible value. </Text>
+        <Text mt={5}>
+          Currently, the starting point provides you enough gas fees on a monthly basis for whole life to: Make 30 AA transfers Perform 30 ERC20 token
+          transfers Execute 30 ERC721 token transfers Conduct 30 ERC1155 token transfers Join Arthera and embrace a future of seamless, secure, and
+          cost-effective blockchain interactions.
+        </Text>
+        <Button
           mt={4}
           colorScheme="blue"
           variant="outline"
           type="submit"
           onClick={mint}
           isLoading={isLoading}
-          loadingText="Minting..."
+          loadingText="Buying..."
           spinnerPlacement="end">
-          Mint
-        </Button> */}
+          Buy
+        </Button>
         {txHash && (
           <Text py={4} fontSize="14px" color="#45a2f8">
             <LinkComponent href={txLink ? txLink : ''}>{txHash}</LinkComponent>

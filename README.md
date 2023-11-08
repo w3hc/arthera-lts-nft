@@ -1,22 +1,4 @@
-# Tuesday Heartbreak
-
-A variant of [Nexth](https://github.com/wslyvh/nexth/), a boilerplate built by [wslyvh](https://github.com/wslyvh) and [others](https://github.com/wslyvh/nexth/graphs/contributors).
-
-## Features
-
-- [Next.js](https://nextjs.org/docs)
-- [Chakra UI](https://chakra-ui.com/)
-- [Ethers v6](https://docs.ethers.org/v6/)
-- [viem](https://viem.sh/)
-- [wagmi](https://wagmi.sh/)
-- [Web3Modal SDK from WalletConnect](https://docs.walletconnect.com/)
-- [Sign-In with Ethereum](https://www.login.xyz/)
-- [usehooks-ts](https://usehooks-ts.com/)
-- [next-SEO](https://github.com/garmeeh/next-seo)
-- [TypeScript](https://www.typescriptlang.org/)
-- [eslint](https://eslint.org/)
-- [prettier](https://prettier.io/)
-- [Husky](https://typicode.github.io/husky/)
+# Arthera Lifetime Subscription NFT
 
 ## Install
 
