@@ -1,5 +1,6 @@
 import { ThemingProps } from '@chakra-ui/react'
 import { Chain } from '@wagmi/core'
+import { arbitrum } from '@wagmi/core/chains'
 
 export const SITE_NAME = 'Arthera Genesis User Power Lifetime Subscription'
 export const SITE_DESCRIPTION =
@@ -12,8 +13,8 @@ export const THEME_CONFIG = {
   initialColorMode: THEME_INITIAL_COLOR,
 }
 
-export const SOCIAL_TWITTER = 'W3HC'
-export const SOCIAL_GITHUB = 'w3hc/tuesday-heartbreak'
+export const SOCIAL_TWITTER = 'artherachain'
+export const SOCIAL_GITHUB = ''
 
 export const artheraTestnet: Chain = {
   id: 10243,
@@ -34,7 +35,7 @@ export const artheraTestnet: Chain = {
   },
 } as const satisfies Chain
 
-export const ETH_CHAINS = [artheraTestnet]
+export const ETH_CHAINS = [artheraTestnet, arbitrum]
 
 export const SERVER_SESSION_SETTINGS = {
   cookieName: SITE_NAME,
